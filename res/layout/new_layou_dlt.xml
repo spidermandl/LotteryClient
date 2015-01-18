@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="25dp"
+      android:layout_marginRight="25dp">
+      <TextView
+          android:id="@+id/redTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="前区（红球）可选5-18个"
+          android:textColor="@color/title_color"
+          android:textSize="16sp"/>
+
+      <com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView
+          android:id="@+id/redGridView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:numColumns="7"
+          android:layout_below="@+id/redTextView"
+          android:listSelector="@android:color/transparent"
+          android:layout_marginTop="5dp">
+
+      </com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView>
+
+      <TextView
+          android:id="@+id/blueTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="后区（蓝球）可选2-12个"
+          android:textColor="@color/title_color"
+          android:layout_below="@+id/redGridView"
+          android:layout_marginTop="20dp"
+          android:textSize="16sp"/>
+
+      <com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView
+          android:id="@+id/blueGridView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/blueTextView"
+          android:numColumns="7"
+          android:listSelector="@android:color/transparent"
+          android:layout_marginTop="5dp">
+
+      </com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView>
+
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="38dp"
+          android:orientation="horizontal" android:id="@+id/llDlt"
+          android:layout_below="@+id/blueGridView" android:layout_marginTop="20dp">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="倍数:"/>
+          <EditText android:layout_width="50dp" android:layout_height="wrap_content"
+              android:numeric="integer"
+              android:background="@android:drawable/edit_text"
+              android:id="@+id/dltBetEtBei" android:text="1" android:inputType="number"/>
+          <com.beardedhen.androidbootstrap.BootstrapButton
+              android:id="@+id/dltBetBtnSubmit"
+              style="@style/BootstrapButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              bootstrapbutton:bb_roundedCorners="false"
+              android:text="投注"
+              app:bb_text_gravity="center"
+              app:bb_size="xsmall"
+              bootstrapbutton:bb_type="info"
+              />
+
+          <com.beardedhen.androidbootstrap.BootstrapButton
+              android:id="@+id/dltRandom"
+              style="@style/BootstrapButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              bootstrapbutton:bb_roundedCorners="false"
+              android:text="随机一注"
+              app:bb_text_gravity="center"
+              app:bb_size="xsmall"
+
+              bootstrapbutton:bb_type="success"
+              />
+      </LinearLayout>
+
+
+  </RelativeLayout>
+</ScrollView>
+</LinearLayout>

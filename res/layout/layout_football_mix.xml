@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lvFootballMix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llFtMixSubmit"></ListView>
+    <LinearLayout
+        android:id="@+id/llFtMixSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnMixSubmitNew"
+            android:layout_height="wrap_content" android:text="投注"/>
+        <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
+            <!--android:id="@+id/bbNewFtMixSubmit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="投注"-->
+            <!--app:bb_size="small"-->
+            <!--app:bb_text_gravity="center"-->
+            <!--android:clickable="true"-->
+            <!--bootstrapbutton:bb_roundedCorners="false"-->
+            <!--bootstrapbutton:bb_type="success" />-->
+
+        <TextView
+            android:id="@+id/tvNewFtMixTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="至少选择2场比赛"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

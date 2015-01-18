@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+            <TextView
+                android:id="@+id/redTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="胆区（红球）"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/title_color"
+                android:textSize="16sp"/>
+
+            <com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView
+                android:id="@+id/redBoldGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="7"
+                android:listSelector="@android:color/transparent"
+                android:layout_below="@+id/redTextView"
+                android:layout_marginTop="10dp">
+
+            </com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView>
+
+            <TextView
+                android:id="@+id/blueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="胆区（蓝球）"
+                android:textColor="@color/title_color"
+                android:layout_below="@+id/redBoldGridView"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"/>
+
+            <com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView
+                android:id="@+id/blueBoldGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blueTextView"
+                android:numColumns="7"
+                android:listSelector="@android:color/transparent"
+                android:layout_marginTop="10dp">
+
+            </com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView>
+
+
+
+            <TextView
+                android:id="@+id/redDragTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拖区（红球）"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/title_color"
+                android:layout_below="@+id/blueBoldGridView"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+            <com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView
+                android:id="@+id/redDragGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="7"
+                android:listSelector="@android:color/transparent"
+                android:layout_below="@+id/redDragTextView"
+                android:layout_marginTop="10dp">
+
+            </com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView>
+
+            <TextView
+                android:id="@+id/blueDragTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拖区（蓝球）"
+                android:textColor="@color/title_color"
+                android:layout_below="@+id/redDragGridView"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"/>
+
+            <com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView
+                android:id="@+id/blueDragGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blueDragTextView"
+                android:numColumns="7"
+                android:listSelector="@android:color/transparent"
+                android:layout_marginTop="10dp">
+
+            </com.evstudio.thefirstlottery.mobile.view.NoScrollListenerGridView>
+
+            <LinearLayout
+                android:id="@+id/llDltMutiple"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/blueDragGridView"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="倍数:" />
+
+                <EditText
+                    android:id="@+id/dltBetEtBei"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:text="1" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/dltBetBtnSubmit"
+                    style="@style/BootstrapButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投注"
+                    app:bb_size="xsmall"
+                    app:bb_text_gravity="center"
+                    bootstrapbutton:bb_roundedCorners="false"
+                    bootstrapbutton:bb_type="info" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/dltRandom"
+                    style="@style/BootstrapButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="随机一注"
+                    android:visibility="gone"
+                    app:bb_size="xsmall"
+                    app:bb_text_gravity="center"
+                    bootstrapbutton:bb_roundedCorners="false"
+                    bootstrapbutton:bb_type="success" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

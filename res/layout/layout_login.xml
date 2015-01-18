@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/rlPhone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_login">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textSize="@dimen/BasicTextSize"
+                    android:paddingLeft="15dp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/line"></View>
+
+                <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="0dp"
+                    android:textColor="@color/actionbar_background_start"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="请输入手机号"
+                    android:textSize="@dimen/BasicTextSize"
+                    android:background="@null"
+                    android:paddingLeft="10dp"
+                    android:drawableRight="@drawable/clean"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/rlPassWord" android:layout_width="match_parent"  android:layout_height="55dp"
+                android:layout_below="@+id/rlPhone"  android:layout_marginTop="8dp"
+                android:background="@drawable/bg_login" android:gravity="center_vertical" >
+                <TextView
+                    android:id="@+id/passWord"  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/password" android:textColor="@color/font"
+                    android:textSize="@dimen/BasicTextSize"  android:paddingLeft="15dp" />
+                <View android:layout_width="0.5dp" android:layout_height="20dp" android:background="@color/line"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"></View>
+                <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                    android:id="@+id/etPassword" android:layout_width="0dp" android:layout_height="30dp"
+                    android:layout_weight="1" android:hint="请输入密码" android:textColor="@color/font"
+                    android:textSize="@dimen/BasicTextSize" android:background="@null"  android:paddingLeft="10dp"
+                    android:drawableRight="@drawable/clean"  android:password="true"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnLoginSubmit"
+            style="@style/BootstrapButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:text="登录"
+            bootstrapbutton:bb_type="primary"
+            app:bb_text_gravity="center"
+            android:background="@drawable/button_background_states"
+            />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnLoginRegister"
+            style="@style/BootstrapButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:text="注册"
+            android:layout_gravity="center_horizontal"
+            app:bb_text_gravity="center"
+            bootstrapbutton:bb_type="danger"
+            />
+</LinearLayout>
+

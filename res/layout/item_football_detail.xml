@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/footselectitembg"
+        >
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal">
+        <LinearLayout android:layout_width="120dp" android:layout_height="128dp" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:textSize="18sp"
+                      android:text="周三001" android:gravity="center" android:id="@+id/tvFbDate"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:textSize="16sp"
+                      android:text="欧冠" android:gravity="center" android:id="@+id/tvFbMatch"
+                      android:textColor="@color/white"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:textSize="14sp"
+                      android:text="23:58" android:gravity="center" android:id="@+id/tvFbTime"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:textSize="14sp"
+                      android:text="天气" android:gravity="center" android:id="@+id/tvFbWeather"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="128dp" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="80dp">
+                <LinearLayout android:layout_width="80dp" android:layout_height="wrap_content" android:gravity="center"
+                              android:orientation="vertical" android:background="@drawable/footselectitembg"
+                              android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="40dp" android:textSize="16sp"
+                              android:text="拜仁" android:gravity="center" android:id="@+id/tvFbHteam"
+                              android:clickable="true"
+                            />
+                    <TextView android:layout_width="match_parent" android:layout_height="40dp" android:textSize="16sp"
+                              android:background="@drawable/textviewbackground"
+                              android:clickable="true"
+                              android:text="1.15" android:gravity="center" android:id="@+id/tvFbHOdds"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="80dp" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:gravity="center"
+                              android:background="@drawable/footselectitembg" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="40dp" android:textSize="16sp"
+                              android:text="平" android:gravity="center" android:clickable="true"
+
+                            />
+                    <TextView android:layout_width="match_parent" android:layout_height="40dp" android:textSize="16sp"
+                              android:text="6.35" android:gravity="center" android:id="@+id/tvFbDOdds"
+                              android:background="@drawable/footselectitembg"
+                              android:clickable="true"
+                            />
+                </LinearLayout>
+                <LinearLayout android:layout_width="80dp" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:gravity="center"
+                              android:background="@drawable/footselectitembg" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="40dp" android:textSize="16sp"
+                              android:text="罗马" android:gravity="center" android:id="@+id/tvFbLteam"
+                              android:clickable="true"
+                            />
+                    <TextView android:layout_width="match_parent" android:layout_height="40dp" android:textSize="16sp"
+                              android:text="10.25" android:gravity="center" android:id="@+id/tvFbLOdds"
+                              android:background="@drawable/footselectitembg"
+                              android:clickable="true"
+                            />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="80dp" android:layout_height="match_parent" android:textSize="12sp"
+                          android:text="主-1 胜 1.00" android:gravity="center" android:id="@+id/tvFbHHOdds"
+                          android:clickable="true" android:background="@drawable/footselectitembg"
+                          android:layout_weight="1"
+                        />
+                <TextView android:layout_width="80dp" android:layout_height="match_parent" android:textSize="12sp"
+                          android:text="平 1.00" android:gravity="center" android:id="@+id/tvFbHDOdds"
+                          android:clickable="true" android:background="@drawable/footselectitembg"
+                          android:layout_weight="1"
+
+                        />
+                <TextView android:layout_width="80dp" android:layout_height="match_parent" android:textSize="12sp"
+                          android:text="负 1.00" android:gravity="center" android:id="@+id/tvFbHLOdds"
+                          android:clickable="true" android:background="@drawable/footselectitembg"
+                          android:layout_weight="1"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

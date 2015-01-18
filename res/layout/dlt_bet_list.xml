@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/tvManual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:text="添加自选号码"
+            android:textColor="@color/white"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:background="@color/white"></View>
+
+        <TextView
+            android:id="@+id/tvAuto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加机选号码"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dalListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llInfor"
+        android:layout_below="@+id/linearLayout"></ListView>
+
+    <LinearLayout
+        android:id="@+id/llInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@+id/tvBalance">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvMultiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="倍数："
+                android:layout_alignBaseline="@+id/etMultiple"
+                android:layout_alignBottom="@+id/etMultiple"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etMultiple"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@android:drawable/edit_text"
+                android:inputType="number"
+                android:text="1"
+                android:layout_toRightOf="@+id/tvMultiple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倍"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/etMultiple"
+                android:layout_toEndOf="@+id/etMultiple"
+                android:id="@+id/textView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvZhuiHao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/etZhuiHao"
+                android:layout_alignBottom="@+id/etZhuiHao"
+                android:text="追号：" />
+
+            <EditText
+                android:id="@+id/etZhuiHao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="0"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:layout_toRightOf="@+id/tvZhuiHao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期数"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/etZhuiHao"
+                android:layout_toEndOf="@+id/etZhuiHao" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cbIsZhuijia"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="5dp"
+            android:text="追加投注" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/button_background_disabled_start"
+        android:layout_above="@+id/llTouZhu">
+
+    </View>
+
+
+    <LinearLayout
+        android:id="@+id/llTouZhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="发起合买"
+            android:drawableTop="@drawable/abs__ic_cab_done_holo_light"
+            android:textColor="@color/red"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvYiZhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1注"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvDltJinEr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2元"
+                android:layout_below="@+id/tvYiZhu"
+                android:gravity="center_horizontal"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvTouzhu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="投注"
+            android:drawableTop="@drawable/abs__ic_cab_done_holo_light"
+            android:gravity="center_horizontal"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+</RelativeLayout>

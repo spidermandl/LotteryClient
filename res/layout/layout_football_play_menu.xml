@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TableLayout
+            android:id="@+id/table_vipra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        <TableRow android:id="@+id/tableRow1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                >
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="胜平负"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="让球胜平负"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect2"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="半全场"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect3"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                >
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="总进球数"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect4"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="比分"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect5"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="混合过关"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect6"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                >
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="任选9场"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect7"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="14场胜负"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect8"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="进球彩"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect9"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow4"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                >
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text="单场"
+                      android:background="@drawable/footselectitembg"
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect10"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text=""
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect11"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp" android:text=""
+                      android:gravity="center"
+                      android:layout_weight="1" android:id="@+id/footSelect12"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

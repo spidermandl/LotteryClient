@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="56dp"
+              android:layout_height="50dp" android:id="@+id/bottom_menu_template_button_id"
+              android:background="#f4f4f4">
+    <ImageView android:id="@+id/bottom_menu_template_img_id" android:paddingTop="5dp" android:layout_gravity="center"
+               android:layout_width="30dp" android:layout_height="36dp" android:src="@drawable/btm_btn_cgdt"/>
+    <TextView android:layout_width="wrap_content" android:id="@+id/bottom_menu_template_text_id"
+              android:layout_height="20dp" android:layout_gravity="center"
+              android:gravity="center" android:textSize="12sp" android:paddingBottom="0dp"/>
+</LinearLayout>

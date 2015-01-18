@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_action_bar"
+        android:id="@+id/navView"
+        ></include>
+
+    <com.evstudio.thefirstlottery.mobile.view.SH11X5ViewPager
+            android:id="@+id/vpSh11x5Draw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ></com.evstudio.thefirstlottery.mobile.view.SH11X5ViewPager>
+</LinearLayout>

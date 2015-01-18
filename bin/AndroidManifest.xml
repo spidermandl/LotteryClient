@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.evstudio.thefirstlottery.mobile"
+    android:versionCode="1"
+    android:versionName="0.9">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/logo_new"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name="com.evstudio.thefirstlottery.mobile.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="cn.hugo.android.scanner.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activity.HelpActivity"
+            android:label="帮助"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyHistoryActivity"
+            android:label="购彩记录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyDiscountActivity"
+            android:label="我的优惠"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HelpSh11x5Activity"
+            android:label="玩法介绍"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Sh11x5BetActivity"
+            android:label="上海11选5"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustResize" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="用户注册"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:label="个人资料"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Sh11x5History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FootballActivity"
+            android:label="竞彩足球"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DltActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootBallSfp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballWeb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootBallSfpResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityBasketBallSfp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballToto"
+            android:label="14场胜负/任9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballToto14"
+            android:label="14场胜负/任9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballTotoResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballToto14Result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityOwnGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballBf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballHh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootBallHhResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityBuyHistoryDlt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityBuyHistoryZq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityBuyHistoryLq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootballMix"
+            android:label="混合投注"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityBlank"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityHistoryDlt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityHistoryFootball"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityHistoryBasketball"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityDltMultiple"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ActivityKaijiang" />
+
+        <activity
+            android:name=".activity.NewDltActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NewActivityDltMultiple"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SH1X5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SH11X5PushActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SH11X5HistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.DltBetListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityFootBallMixActivity"
+            android:screenOrientation="portrait" />
+        <!-- 使用说明 -->
+        <activity
+            android:name=".view.FootBallMixDescription"
+            android:theme="@style/dialog"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".activity.PersonalInfoActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+</manifest>

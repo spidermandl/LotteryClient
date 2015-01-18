@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@drawable/bet_item_blue_background"
+        android:layout_width="36dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/tvBetItem"
+        android:gravity="center_horizontal|top"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/bet_textview_selector"
+        android:paddingTop="3dp"
+        android:text="9"/>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout  android:layout_width="match_parent"  android:layout_height="55dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_login" android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_email" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize"  android:paddingLeft="15dp" />
+            <View android:layout_width="0.5dp" android:layout_height="20dp" android:background="@color/line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"></View>
+            <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                android:id="@+id/etEmail" android:layout_width="0dp" android:layout_height="30dp"
+                android:layout_weight="1" android:hint="请输入邮箱" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize" android:background="@null"  android:paddingLeft="10dp"
+                android:drawableRight="@drawable/clean"  android:inputType="textEmailAddress"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent"  android:layout_height="55dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_login" android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_name" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize"  android:paddingLeft="15dp" />
+            <View android:layout_width="0.5dp" android:layout_height="20dp" android:background="@color/line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"></View>
+            <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                android:id="@+id/etName" android:layout_width="0dp" android:layout_height="30dp"
+                android:layout_weight="1" android:hint="请输入真实姓名" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize" android:background="@null"  android:paddingLeft="10dp"
+                android:drawableRight="@drawable/clean"  android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent"  android:layout_height="55dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_login" android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_card" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize"  android:paddingLeft="15dp" />
+            <View android:layout_width="0.5dp" android:layout_height="20dp" android:background="@color/line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"></View>
+            <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                android:id="@+id/etCard" android:layout_width="0dp" android:layout_height="30dp"
+                android:layout_weight="1" android:hint="请输入身份证" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize" android:background="@null"  android:paddingLeft="10dp"
+                android:drawableRight="@drawable/clean"  android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent"  android:layout_height="55dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_login" android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_bank_name" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize"  android:paddingLeft="15dp" />
+            <View android:layout_width="0.5dp" android:layout_height="20dp" android:background="@color/line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"></View>
+            <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                android:id="@+id/etBankName" android:layout_width="0dp" android:layout_height="30dp"
+                android:layout_weight="1" android:hint="请输入绑定银行" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize" android:background="@null"  android:paddingLeft="10dp"
+                android:drawableRight="@drawable/clean"  android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent"  android:layout_height="55dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_login" android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_bank_card" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize"  android:paddingLeft="15dp" />
+            <View android:layout_width="0.5dp" android:layout_height="20dp" android:background="@color/line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"></View>
+            <com.evstudio.thefirstlottery.mobile.view.CleanableEditText
+                android:id="@+id/etBankNo" android:layout_width="0dp" android:layout_height="30dp"
+                android:layout_weight="1" android:hint="请输入绑定银行卡号" android:textColor="@color/font"
+                android:textSize="@dimen/BasicTextSize" android:background="@null"  android:paddingLeft="10dp"
+                android:drawableRight="@drawable/clean"  android:inputType="number"/>
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnLoginSubmit"
+            style="@style/BootstrapButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:layout_marginTop="25dp"
+            android:text="保存"
+            bootstrapbutton:bb_type="primary"
+            app:bb_text_gravity="center"
+            android:background="@drawable/button_background_states"/>
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="text">#FCFCFC</color>
+    <color name="text_light">#999999</color>
+    <color name="text_inverted">#FFFFFF</color>
+    <color name="text_title">#DFDFDF</color>
+    <color name="pager_footer">#1fb6ed</color>
+    <color name="pager_selected_text">#FFFFFF</color>
+    <color name="pager_background">#F4F4F4</color>
+    <color name="pager_background_alternate">#E7E7E7</color>
+    <color name="text_link">#1fb6ed</color>
+    <color name="table_text">#484848</color>
+    <color name="table_text_inverted">#FFFFFF</color>
+    <color name="table_text_light">#A6A6A6</color>
+    <color name="table_text_header">#636363</color>
+    <color name="header_background_start">#ECECEC</color>
+    <color name="header_background_end">#C3C3C3</color>
+    <color name="header_background_top">#F9F9F9</color>
+    <color name="header_background_bottom">#A7A7A7</color>
+    <color name="actionbar_background_start">#272727</color>
+    <color name="actionbar_background_end">#1A1A1A</color>
+    <color name="bootstrap_divider_top">#000000</color>
+    <color name="bootstrap_divider_bottom">#5A5A5A</color>
+    <color name="main_background_start">#2E2E2E</color>
+    <color name="main_background_end">#2C2C2C</color>
+    <color name="button_background_enabled_start">#1fb6ed</color>
+    <color name="button_background_enabled_end">#1c9ac8</color>
+    <color name="button_background_pressed_start">#f76500</color>
+    <color name="button_background_pressed_end">#fb812c</color>
+    <color name="edit_text_background_start">#EFF6FF</color>
+    <color name="edit_text_background_end">#FBFDFF</color>
+    <color name="button_background_disabled_start">#7b7b7b</color>
+    <color name="button_background_disabled_end">#646464</color>
+    <color name="text_shadow">#000000</color>
+
+    <color name="background_selected">#1fb6ed</color>
+    <color name="nav_button_text_light">#ffffff</color>
+    <color name="nav_button_pressed">#1fb6ed</color>
+    <color name="nav_button_disabled">#646464</color>
+    <color name="nav_button_text_disabled">#464646</color>
+
+    <color name="dark_grey">#1f1f1f</color>
+    <color name="navigation_drawer_item_separator">#c2c2c2</color>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="capture_text_cover_bg">#99535353</color>
+    <color name="seek_bar_text">#fff6f6f6</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <!--<color name="transparent">#00000000</color>-->
+    <color name="skhd_group_line">#c7c8c9</color>
+    <color name="skhd_group_bg">#f9f9f9</color>
+    <color name="skhd_book_bg">#f8f6fa</color>
+    <color name="skhd_date">#53c2e9</color>
+    <color name="skhd_gray">#9aa1aa</color>
+    <color name="topbar_separator">#8B1A1A</color>
+    <color name="topbar_title">#FFFFFF</color>
+    <color name="topbar_background_start">#8B1A1A</color>
+    <color name="topbar_background_end">#CD2626</color>
+    <color name="topbar_background_item_pressed_start">#FF7F00</color>
+    <color name="topbar_background_item_pressed_end">#EE7600</color>
+    <color name="actionbar_separator">#8B1A1A</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <!--<color name="actionbar_background_start">#e25e91</color>-->
+    <!--<color name="actionbar_background_end">#e25e91</color>-->
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>
+    <color name="forget_pressed">#A2A2A2</color>
+    <color name="reg_normal">#0079FF</color>
+    <color name="reg_pressed">#0156b3</color>
+    <color name="gray">#C4C4C4</color>
+    <color name="blue">#33b5e5</color>
+    <color name="darkblue">#0099cc</color>
+    <color name="red">#ff4444</color>
+    <color name="grayStart">#adadad</color>
+    <color name="grayEnd">#ffffff</color>
+    <color name="bg_handle_pressed">#a0a0a0</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="selector_ss_pressed">#9933cc</color>
+    <color name="selector_ss_default">#aa66cc</color>
+    <color name="selector_button_pressed">#9933cc</color>
+    <color name="selector_button_default">#aa66cc</color>
+    <color name="avatar_border">#FFFFFF</color>
+    <color name="list_item_pressed">#1A000000</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="grey">#ffd3d3d3</color>
+    <color name="green">#ff8dd304</color>
+    <color name="yellow">#fffffbae</color>
+
+    <color name="bright_foreground_dark">#ffffffff</color>
+
+    <color name="actionbar_background">#cc324b</color>
+    <color name="line">#cfcfd0</color>
+    <color name="font">#2e2c22</color>
+
+</resources>

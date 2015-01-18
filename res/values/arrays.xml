@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="footballPlayFunc">
+        <item>胜平负/让球胜平负</item>
+        <item>半全场</item>
+        <item>总进球数</item>
+        <item>比分</item>
+        <item>混合过关</item>
+        <item>任选9场</item>
+        <item>14场胜负</item>
+        <item>进球彩</item>
+        <item>单场</item>
+    </string-array>
+</resources>

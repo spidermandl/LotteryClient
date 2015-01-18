@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/frame">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvHomeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/center_line"
+                    android:textColor="@color/white"
+                    android:background="@color/red"
+                    android:textSize="18sp"
+                    android:text="朝鲜(中)(主)"/>
+
+                <View
+                    android:id="@+id/center_line"
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/center_line"
+                    android:textColor="@color/white"
+                    android:background="@color/red"
+                    android:textSize="18sp"
+                    android:text="沙特(客)"/>
+
+                <Button
+                    android:id="@+id/btnFinish"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/abs__ic_clear_normal"
+                    android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="胜平负"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f58b00"
+                android:drawableLeft="@drawable/ic_football"
+                android:textSize="18sp"/>
+            
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="胜5.05"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/tvDraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="平5.05"/>
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"/>
+                <TextView
+                    android:id="@+id/tvLose"
+
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="负5.05"/>
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRangqiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="让球胜负平(1)"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f58b00"
+                android:drawableLeft="@drawable/ic_football"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvGiveWin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="胜5.05"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/tvGiveDraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="平5.05"/>
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"/>
+                <TextView
+                    android:id="@+id/tvGiveLose"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="负5.05"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="全场比分"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f58b00"
+                android:drawableLeft="@drawable/ic_football"
+                android:textSize="18sp"/>
+            
+            <com.evstudio.thefirstlottery.mobile.view.FootBallAllScoreLinearLayout
+                android:id="@+id/llAllScore"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="总进球数"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f58b00"
+                android:drawableLeft="@drawable/ic_football"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvAllBall1"
+                        style="@style/football_all_text"
+                        android:text="0\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllBall2"
+                        style="@style/football_all_text"
+                        android:text="1\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllBall3"
+                        style="@style/football_all_text"
+                        android:text="2\n6.0"/>
+                    <TextView
+                        android:id="@+id/tvAllBall4"
+                        style="@style/football_all_text"
+                        android:text="3\n6.0"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvAllBall5"
+                        style="@style/football_all_text"
+                        android:text="4\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllBall6"
+                        style="@style/football_all_text"
+                        android:text="5\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllBall7"
+                        style="@style/football_all_text"
+                        android:text="6\n6.0"/>
+                    <TextView
+                        android:id="@+id/tvAllBall8"
+                        style="@style/football_all_text"
+                        android:text="7+\n6.0"/>
+
+                </LinearLayout>
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="半全场"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f58b00"
+                android:drawableLeft="@drawable/ic_football"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvAllHalf1"
+                        style="@style/football_all_text"
+                        android:text="胜-胜\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf2"
+                        style="@style/football_all_text"
+                        android:text="胜-平\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf3"
+                        style="@style/football_all_text"
+                        android:text="胜-负\n6.0"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf4"
+                        style="@style/football_all_text"
+                        android:text="平-胜\n6.0"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf5"
+                        style="@style/football_all_text"
+                        android:text="平-平\n6.0"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvAllHalf6"
+                        style="@style/football_all_text"
+                        android:text="平-负\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf7"
+                        style="@style/football_all_text"
+                        android:text="负-胜\n6.5"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf8"
+                        style="@style/football_all_text"
+                        android:text="负-平\n6.0"/>
+                    <TextView
+                        android:id="@+id/tvAllHalf9"
+                        style="@style/football_all_text"
+                        android:text="负-负\n6.0"/>
+                    <TextView
+                        style="@style/football_all_text"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

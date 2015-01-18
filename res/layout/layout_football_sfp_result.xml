@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvFtSfpResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llFtSfpResultSelect"
+        android:scrollbarStyle="outsideOverlay"></ListView>
+
+    <LinearLayout
+        android:id="@+id/llFtSfpResultSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFtSfpResult"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="选择玩法" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFtSfpResultWf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="玩法选择:"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <EditText
+                        android:id="@+id/etFtSfpBs"
+                        android:layout_width="48dp"
+                        android:layout_height="32dp"
+                        android:maxLength="2"
+                        android:editable="true"
+                        android:inputType="number"
+                        android:numeric="integer"
+                        android:background="@android:drawable/edit_text"
+                        android:textSize="14sp"
+                        android:text="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="倍" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFtSfpResultTip"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFtSfpResultSubmit"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="确定" />
+    </LinearLayout>
+</RelativeLayout>

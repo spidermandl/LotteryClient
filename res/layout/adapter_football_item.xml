@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/list_ft_sfp_card"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:orientation="vertical" android:background="@drawable/footselectitembg">
+        <TextView android:layout_width="match_parent" android:layout_height="32dp" android:textSize="18sp"
+            android:text="周三001" android:gravity="center" android:id="@+id/tvFtDate"/>
+        <TextView android:layout_width="match_parent" android:layout_height="32dp" android:textSize="16sp"
+            android:text="欧冠" android:gravity="center" android:id="@+id/tvFtMatch"
+            android:textColor="@color/white"/>
+        <TextView android:layout_width="match_parent" android:layout_height="16dp" android:textSize="14sp"
+            android:text="23:58" android:gravity="center" android:id="@+id/tvFtTime"/>
+        <TextView android:layout_width="match_parent" android:layout_height="16dp" android:textSize="14sp"
+            android:text="天气" android:gravity="center" android:id="@+id/tvFtWeather"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/footselectitembg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal"
+
+        >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="96dp" android:orientation="vertical"  android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:id="@+id/tvSfpHTeam"
+                android:text="" android:textSize="14sp" android:gravity="center"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp"
+                android:background="@drawable/footselectitembg" android:id="@+id/tvSfpPl3"
+                android:text="" android:gravity="center"
+                android:textSize="14sp" android:clickable="true"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="96dp" android:orientation="vertical"  android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="32dp"
+                android:text="平" android:textSize="14sp" android:gravity="center"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp"
+                android:background="@drawable/footselectitembg" android:id="@+id/tvSfpPl1"
+                android:text="平" android:gravity="center"
+                android:textSize="14sp" android:clickable="true"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="96dp" android:orientation="vertical" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:id="@+id/tvSfpGTeam"
+                android:text="" android:textSize="14sp" android:gravity="center"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp"
+                android:background="@drawable/footselectitembg" android:id="@+id/tvSfpPl0"
+                android:text="" android:gravity="center"
+                android:textSize="14sp" android:clickable="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnPlayMethod"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="玩法"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

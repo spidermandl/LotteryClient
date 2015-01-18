@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tvDltNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0102030453"
+        android:textColor="@color/red"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDltNum"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="单式投注"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/chevron"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/tvDltNum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+     <TextView
+         android:id="@+id/tvTouzhuMoney"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="1注2元"
+         android:layout_marginBottom="5dp"
+         android:layout_alignTop="@+id/tvStyle"
+         android:layout_toLeftOf="@+id/imageView"
+         android:layout_toStartOf="@+id/imageView" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/actionbar_background">
+
+        <RelativeLayout
+            android:id="@+id/rlBack"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/abs__ic_ab_back_holo_light"/>
+
+        <ImageView
+            android:id="@+id/ivTitle"
+            android:layout_width="32dp"
+            android:layout_height="56dp"
+            android:layout_toRightOf="@+id/ivBack"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_icon_new_01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivTitle"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/abs__action_bar_title_text_size"
+            android:text="上海11选5"
+            android:id="@+id/tvBackName" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvSelect11X5"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/abs__action_bar_title_text_size"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:text="任选一"
+            android:drawableRight="@drawable/abs__ic_select"/>
+
+        <Button
+            android:id="@+id/btnGoHistory"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/app_icon_new_08"/>
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="30期"            android:visibility="gone"
+
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lvFootballHh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llFtHhSubmit"></ListView>
+
+    <LinearLayout
+        android:id="@+id/llFtHhSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/bbFtHhSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="投注"
+            app:bb_size="small"
+            app:bb_text_gravity="center"
+            bootstrapbutton:bb_roundedCorners="false"
+            bootstrapbutton:bb_type="success"></com.beardedhen.androidbootstrap.BootstrapButton>
+
+        <TextView
+            android:id="@+id/tvFtHhTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="至少选择2场比赛"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

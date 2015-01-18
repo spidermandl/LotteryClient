@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+             xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" android:id="@+id/flFootball01">
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <ListView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/lvFootballMatch"
+                  android:layout_above="@+id/llybuttom"
+                ></ListView>
+        <LinearLayout
+                android:layout_height="50dp"
+                android:id="@+id/llybuttom"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                >
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:id="@+id/llTip" android:orientation="horizontal">
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/btnPutClear"
+                        style="@style/BootstrapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        bootstrapbutton:bb_roundedCorners="false"
+                        android:text="清空"
+                        bootstrapbutton:bb_type="danger"
+                        app:bb_text_gravity="center"
+                        android:background="@drawable/button_background_states"
+                        app:bb_size="xsmall"
+                        android:layout_weight="1"
+                        />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_gravity="bottom"
+                          android:text="已选择0场，至少选择2场比赛" android:textSize="14sp"
+                          android:textColor="@color/red"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          android:id="@+id/tvFootTips"
+                        />
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/btnPutSubmit"
+                        style="@style/BootstrapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        bootstrapbutton:bb_roundedCorners="false"
+                        android:text="投注"
+                        app:bb_text_gravity="center"
+                        app:bb_size="xsmall"
+                        bootstrapbutton:bb_type="success"
+                        android:layout_weight="1"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

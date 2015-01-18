@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/tvAll1"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll2"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll3"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll4"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll5"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll6"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll7"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+
+            </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4">
+            <TextView
+                android:id="@+id/tvAll8"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"
+                />
+            <TextView
+                android:id="@+id/tvAll9"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll10"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll11"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll12"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAll13"
+                style="@style/football_all_text"
+                android:text="胜其他\n6.50"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75">
+                <TextView
+                    android:id="@+id/tvAll14"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"
+                    />
+                <TextView
+                    android:id="@+id/tvAll15"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+                <TextView
+                    android:id="@+id/tvAll16"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+                <TextView
+                    android:id="@+id/tvAll17"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAll18"
+                style="@style/football_all_text"
+                android:text="平其他\n6.50"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvAll19"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll20"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll21"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll22"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll23"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll24"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+            <TextView
+                android:id="@+id/tvAll25"
+                style="@style/football_all_text"
+                android:text="1:0\n6.50"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4">
+                <TextView
+                    android:id="@+id/tvAll26"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"
+                    />
+                <TextView
+                    android:id="@+id/tvAll27"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+                <TextView
+                    android:id="@+id/tvAll28"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+                <TextView
+                    android:id="@+id/tvAll29"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+                <TextView
+                    android:id="@+id/tvAll30"
+                    style="@style/football_all_text"
+                    android:text="1:0\n6.50"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAll31"
+                style="@style/football_all_text"
+                android:text="负其他\n6.50"/>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

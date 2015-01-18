@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/wvTotoBuyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llFtTotoResultSelect" />
+    <LinearLayout
+        android:id="@+id/llFtTotoResultSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingLeft="10dp">
+
+            <EditText
+                android:id="@+id/etFtTotoBs"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:background="@android:drawable/edit_text"
+                android:editable="true"
+                android:inputType="number"
+                android:maxLength="2"
+                android:numeric="integer"
+                android:text="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="倍" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center"
+            android:layout_height="match_parent" android:id="@+id/tvToto14Tip" android:text="您选择了1张票，最高中奖金额为100元"/>
+        <Button
+            android:id="@+id/btnFtToto14ResultSubmit"
+            android:layout_width="wrap_content" android:layout_weight="1"
+            android:layout_height="56dp"
+            android:paddingRight="10dp"
+            android:text="确定" />
+    </LinearLayout>
+</RelativeLayout>

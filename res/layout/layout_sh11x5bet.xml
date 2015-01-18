@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res/com.evstudio.thefirstlottery.mobile"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <GridView android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="6"
+              android:gravity="center" android:verticalSpacing="10dp" android:horizontalSpacing="10dp"
+              android:stretchMode="columnWidth"
+              android:id="@+id/betGridView">
+    </GridView>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <com.beardedhen.androidbootstrap.BootstrapButton android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"
+                                                         app:bb_size="xsmall"
+                                                         android:text="投注" bootstrapbutton:bb_type="danger"
+                                                         android:id="@+id/betBtnSubmit">
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+    </ScrollView>
+</LinearLayout>
