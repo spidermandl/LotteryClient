@@ -1,0 +1,6 @@
+addr:    210.5.159.37
+username:code4lottery
+passwd:  1qazxsw2#EDC
+
+username:eric
+passwd:  eric.ren2001
