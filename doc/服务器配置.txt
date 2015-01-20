@@ -4,3 +4,8 @@ passwd:  1qazxsw2#EDC
 
 username:eric
 passwd:  eric.ren2001
+
+mysql：
+port 23708
+user eric
+password eric.ren2001
