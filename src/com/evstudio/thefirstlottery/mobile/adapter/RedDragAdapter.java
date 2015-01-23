@@ -14,6 +14,8 @@ import java.util.ArrayList;
 
 /**
  * Created by zhouyong on 15-1-8.
+ *  胡莹莹注释
+ * 大乐透彩票中拖区红球适配器
  */
 public class RedDragAdapter extends BaseAdapter {
 

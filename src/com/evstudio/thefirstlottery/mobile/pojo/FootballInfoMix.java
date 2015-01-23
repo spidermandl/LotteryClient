@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 /**
  * Created by eric on 14/11/20.
+ * 胡莹莹注释
+ * 足球混合玩法信息实体类
  */
 public class FootballInfoMix implements Serializable {
     public String gameNumber;
@@ -61,19 +63,19 @@ public class FootballInfoMix implements Serializable {
     }
 
     public void initOdds() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {  //胜负平玩法的选择状态
             odds[i] = Float.parseFloat(oriPl[i]);
         }
-        for (int i = 3; i < 6; i++) {
+        for (int i = 3; i < 6; i++) {  //让球胜负平玩法的选择状态
             odds[i] = Float.parseFloat(oddPl[i - 3]);
         }
-        for (int i = 6; i < 15; i++) {
+        for (int i = 6; i < 15; i++) {  //半全场玩法的选择状态 
             odds[i] = Float.parseFloat(halfWin[i - 6]);
         }
-        for (int i = 15; i < 23; i++) {
+        for (int i = 15; i < 23; i++) {  //总进球数玩法的选择状态
             odds[i] = Float.parseFloat(goals[i - 15]);
         }
-        for (int i = 23; i < 54; i++) {
+        for (int i = 23; i < 54; i++) {  //全场比分玩法的选择状态
             odds[i] = Float.parseFloat(scores[i - 23]);
         }
     }

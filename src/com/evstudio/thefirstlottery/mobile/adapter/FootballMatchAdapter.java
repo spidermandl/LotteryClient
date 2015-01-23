@@ -17,6 +17,8 @@ import java.util.HashMap;
 
 /**
  * Created by ericren on 14-11-5.
+ * 胡莹莹注释
+ * 足彩中除混合投注玩法之外的玩法的比赛信息适配器
  */
 public class FootballMatchAdapter extends BaseAdapter implements View.OnClickListener{
     private static String TAG = "FootballMatchAdapter";

@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 /**
  * Created by zhouyong on 15-1-8.
+ * 胡莹莹注释
+ * 大乐透彩票中拖区红球实体类
  */
 
 public class RedDragBean implements Serializable {

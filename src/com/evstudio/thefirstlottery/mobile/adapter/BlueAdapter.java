@@ -14,6 +14,8 @@ import java.util.ArrayList;
 
 /**
  * Created by zhouyong on 15-1-8.
+ * 胡莹莹注释
+ * 大乐透彩票中胆区篮球适配器
  */
 public class BlueAdapter extends BaseAdapter {
 

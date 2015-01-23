@@ -11,6 +11,8 @@ import com.evstudio.thefirstlottery.mobile.R;
 
 /**
  * Created by ericren on 14-9-19.
+ * 胡莹莹注释
+ * 彩民投注的彩票历史记录适配器
  */
 public class BuyHistoryAdapter extends ArrayAdapter<String[]> {
     private static String TAG = "BUYHISTORY";

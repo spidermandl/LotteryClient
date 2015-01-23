@@ -14,6 +14,7 @@ import java.util.HashMap;
 
 /**
  * Created by eric on 15/1/3.
+ * 
  */
 public class AdapterListViewMix extends BaseAdapter {
 

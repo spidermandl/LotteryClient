@@ -2,13 +2,19 @@ package com.evstudio.thefirstlottery.mobile.core;
 
 /**
  * Created by ericren on 14-9-12.
+ * 胡莹莹注释
+ * 本类为彩票投注实体类，用作定义彩票投注信息
  */
 public class BetItem {
+	//彩票描述
     private String strDescription;
+    //彩票名称
     private String strTilte;
     private int iDrawable;
+    //下期开奖时间
     private String nextTime;
     private String lastPeriods;
+    //近期开奖
     private String lastDraw;
 
     public String getStrDescription() {

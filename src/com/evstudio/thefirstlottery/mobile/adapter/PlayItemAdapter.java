@@ -15,6 +15,8 @@ import java.util.ArrayList;
 
 /**
  * Created by ericren on 14-10-8.
+ * 胡莹莹注释
+ * 热门彩票适配器
  */
 public class PlayItemAdapter extends BaseAdapter {
     private ArrayList<String> list = new ArrayList<String>();

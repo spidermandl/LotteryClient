@@ -16,6 +16,8 @@ import java.util.ArrayList;
 
 /**
  * Created by eric on 14/11/11.
+ * 胡莹莹注释
+ * 足彩混合投注比赛结果适配器
  */
 public class AdapterListViewHhResult extends BaseAdapter {
     private ArrayList<FootballInfoMix> arrayList;

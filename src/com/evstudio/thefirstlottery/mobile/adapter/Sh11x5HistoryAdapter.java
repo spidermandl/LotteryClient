@@ -8,6 +8,8 @@ import java.util.List;
 
 /**
  * Created by ericren on 14-10-25.
+ * 胡莹莹注释
+ * 上海11选5走势图适配器
  */
 public class Sh11x5HistoryAdapter extends FragmentPagerAdapter {
 

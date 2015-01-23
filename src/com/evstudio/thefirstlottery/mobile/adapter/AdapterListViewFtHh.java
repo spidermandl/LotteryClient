@@ -22,6 +22,8 @@ import java.util.HashMap;
 
 /**
  * Created by eric on 14/10/20.
+ * 胡莹莹注释
+ * 竞彩足球的混合投注中每场比赛投注适配器
  */
 public class AdapterListViewFtHh extends BaseAdapter {
     public ArrayList<FootballInfoMix> arrayList = new ArrayList<FootballInfoMix>();
@@ -138,7 +140,7 @@ public class AdapterListViewFtHh extends BaseAdapter {
         vh.imHomeTeam.setText("[主]" + infoMix.homeTeam);
         vh.imAwayTeam.setText("[客]" + infoMix.awayTeam);
         vh.imOdd.setText("让" + infoMix.odd);
-
+        
         for (int i = 0; i < vh.imOriPl.length; i++) {
             vh.imOriPl[i].setText(infoMix.oriPl[i]);
             vh.imOriPl[i].setTag(new Integer(i));

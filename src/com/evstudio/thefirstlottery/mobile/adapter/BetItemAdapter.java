@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 /**
  * Created by ericren on 14-9-12.
+ * 胡莹莹注释
+ * 上海11选5中供彩民选择的11个号码适配器
  */
 public class BetItemAdapter extends BaseAdapter {
     private ArrayList<String> list;
@@ -102,18 +104,18 @@ public class BetItemAdapter extends BaseAdapter {
           vh = (ViewHolder) convertView.getTag();
 
         String item = (String)getItem(position);
-
-        if (Constants.SH11X5SelectNums[position] == 1){
+        //判断当前11个号码是否选中
+        if (Constants.SH11X5SelectNums[position] == 1){  //选中
             vh.textView.setSelected(true);
             strResult[position] = (position+1)+"";
-        }else {
+        }else {                                         //未选中
             vh.textView.setSelected(false);
             strResult[position] = "";
         }
 
         vh.textView.setText(item);
         vh.textView.setTag(position);
-        vh.textView.setOnClickListener( new View.OnClickListener() {
+        vh.textView.setOnClickListener( new View.OnClickListener() {   //监听彩民选中的号码
             @Override
             public void onClick(View v) {
                 final int index =  (Integer)v.getTag();

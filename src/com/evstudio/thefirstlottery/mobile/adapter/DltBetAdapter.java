@@ -14,6 +14,8 @@ import java.util.ArrayList;
 
 /**
  * Created by zhouyong on 15-1-12.
+ * 胡莹莹注释
+ * 大乐透投注活动适配器
  */
 public class DltBetAdapter extends BaseAdapter {
     private ArrayList<DltBetBean> dltBetList;
@@ -56,7 +58,7 @@ public class DltBetAdapter extends BaseAdapter {
         } else {
             tvStyle.setText("复式投注");
         }
-        tvTouzhuMoney.setText(dltBetBean.getMoneyTip());
+        tvTouzhuMoney.setText(dltBetBean.getMoneyTip());    //一注金额
 
         return convertView;
     }

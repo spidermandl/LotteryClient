@@ -15,6 +15,8 @@ import java.util.ArrayList;
 
 /**
  * Created by eric on 14/11/11.
+ * 胡莹莹注释
+ * 足彩胜负平/让球胜负平玩法的比赛结果适配器
  */
 public class AdapterListViewSfpResult extends BaseAdapter {
     private ArrayList<FootballGameInfo> arrayList;

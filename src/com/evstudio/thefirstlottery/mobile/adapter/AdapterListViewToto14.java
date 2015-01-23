@@ -19,6 +19,8 @@ import java.util.HashMap;
 
 /**
  * Created by eric on 14/11/20.
+ * 胡莹莹注释
+ * 足彩中胜负彩适配器
  */
 public class AdapterListViewToto14 extends BaseAdapter {
     public ArrayList<FootballTotoInfo> arrayList = new ArrayList<FootballTotoInfo>();

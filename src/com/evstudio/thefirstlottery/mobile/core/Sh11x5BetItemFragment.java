@@ -45,6 +45,8 @@ import java.util.List;
 
 /**
  * Created by ericren on 14-9-12.
+ * 胡莹莹注释
+ * 上海11选5彩票投注的fragment
  */
 public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterView.OnItemClickListener, View.OnClickListener {
 
@@ -68,7 +70,7 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
     private CountDownTextView tvCountDown;
 
     private ListView listView;
-
+    
     private ArrayList<String[]> dataList;
 
     private int combination;
@@ -93,7 +95,7 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
         thisTitle = mBundle.getString("title");
         playCmd = mBundle.getString("arg");
         selectNumber = mBundle.getInt("numbers");
-
+        //将11选5的11个号码数据传到BetItemAdapter中并显示在gridView上
         gridView = (GridView) contextView.findViewById(R.id.sh11x5BetGridView);
         lstItem = new ArrayList<String>();
         for (int i = 1; i < 12; i++)
@@ -107,14 +109,14 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
 
         btnBet.setOnClickListener(this);
         sh11x5BetEtBei = (EditText) contextView.findViewById(R.id.sh11x5BetEtBei);
-
+        //设置显示彩票销售时间信息
         tvCountDown = (CountDownTextView) contextView.findViewById(R.id.tv_bet_countdown);
         long countdown = Long.parseLong(Sh11x5Next.nextTime) * 1000 - System.currentTimeMillis() - 120 * 1000;
         countdown = countdown < 0 ? 0 : countdown;
         tvCountDown.setText(Util.getCountDown(countdown));
 
         responseData = mBundle.getString("data");
-
+        //获得为显示彩民自己账号购买彩票选中的号码信息的listView
         listView = (ListView) contextView.findViewById(R.id.listDraw);
 
 //        ViewGroup.LayoutParams params = listView.getLayoutParams();
@@ -180,12 +182,12 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
         switch (v.getId()) {
             case R.id.sh11x5BetBtnSubmit:
                 // TODO 暂时注释 方便测试
-                if (!assistTool.getPreferenceBoolean("isLogon")) {
+                if (!assistTool.getPreferenceBoolean("isLogon")) {  //未登录
                     MyToast.instance.showToast(contextView.getContext(), layoutInflater, "您尚未登录，请先登录！");
                     assistTool.gotoActivity(LoginActivity.class, false);
                     break;
                 }
-                if (Long.parseLong(Sh11x5Next.nextTime) * 1000 - 120 * 1000 < System.currentTimeMillis()) {
+                if (Long.parseLong(Sh11x5Next.nextTime) * 1000 - 120 * 1000 < System.currentTimeMillis()) {  //本期销售时间已过
                     AlertDialog alertDialog = new AlertDialog.Builder(contextView.getContext()).setTitle("提示")
                             .setMessage(Sh11x5Next.nextPeriods + " 本期销售已结束，请等待开奖！")
                             .create();
@@ -195,12 +197,12 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
 
                 // TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 selectDataList.clear();
-                for (int i = 0; i < itemAdapter.strResult.length; i++) {
+                for (int i = 0; i < itemAdapter.strResult.length; i++) {   //设置选中号码格式给selectDataList:两位数，不足左边补零
                     if (null != itemAdapter.strResult[i] && !"".equals(itemAdapter.strResult[i])) {
                         selectDataList.add(String.format("%02d", Integer.parseInt(itemAdapter.strResult[i])));
                     }
                 }
-                if (selectNumber > selectDataList.size()) {
+                if (selectNumber > selectDataList.size()) {  //选择号码数量小于至少数
                     AlertDialog alertDialog = new AlertDialog.Builder(contextView.getContext()).setTitle("提示")
                             .setMessage("至少选择" + selectNumber + "个号码，请重新选择！")
                             .create();
@@ -209,7 +211,7 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
                 }
 
                 StringBuffer strBuff = new StringBuffer();
-                for (int i = 0; i < selectDataList.size(); i++) {
+                for (int i = 0; i < selectDataList.size(); i++) {   //遍历选中号码转成字符串，以","分割
                     strBuff.append(selectDataList.get(i));
                     if (i < selectDataList.size() - 1)
                         strBuff.append(",");
@@ -224,12 +226,12 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
 //                Intent intent = new Intent();
 //                intent.putExtra("list", initDltBetData(betContent, money, 1));
 
-
-                SH11X5PushBean pushBean = new SH11X5PushBean();
+                //赋值给投注信息实体类：玩法，选中号码，倍数，注数，投注金额
+                SH11X5PushBean pushBean = new SH11X5PushBean();     
                 pushBean.setBettype(playCmd);
                 pushBean.setBetcontent(betContent);
                 pushBean.setBetcount(sh11x5BetEtBei.getText() + "");
-
+                
                 String[] selectedNumber = pushBean.getBetcontent().split(",");
                 int iplay = Integer.parseInt(pushBean.getBettype());
                 int combi = selectedNumber.length;
@@ -244,7 +246,7 @@ public class Sh11x5BetItemFragment extends SherlockFragment implements AdapterVi
                 pushBean.setZhushu( combi );
                 pushBean.setMoney( 2 * combi * Integer.parseInt(pushBean.getBetcount()));
 
-
+                //将每次投注添加到已静态生成的投注信息实体类（SH11X5PushBean）类型的集合中
                 Constants.pushBeanList.add(pushBean);
 
 //                pushIntent.putExtra("data",pushBean);

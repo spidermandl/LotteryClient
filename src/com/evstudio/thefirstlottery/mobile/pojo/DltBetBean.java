@@ -4,14 +4,21 @@ import java.io.Serializable;
 
 /**
  * Created by zhouyong on 15-1-12.
+ * 胡莹莹注释
+ * 大乐透投注实体类
  */
 public class DltBetBean implements Serializable {
 
     private String dltNumber;
+    //投注类型：单式、复式
     private int dltStyle;
+    //一注金额
     private String moneyTip;
+    //投注金额
     private int iMoney;
+    //注数
     private int iZhu;
+    //倍数
     private int iBeishu;
 
     public int getiBeishu() {

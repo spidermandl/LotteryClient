@@ -10,6 +10,8 @@ import java.util.List;
 
 /**
  * Created by ericren on 14-9-12.
+ * 胡莹莹注释
+ * 上海11选5的投注标题栏适配器
  */
 public class Sh11x5BetFragmentAdapter  extends FragmentStatePagerAdapter {
     private List<Sh11x5BetItemFragment> list;

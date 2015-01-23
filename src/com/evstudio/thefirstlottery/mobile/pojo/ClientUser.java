@@ -2,14 +2,21 @@ package com.evstudio.thefirstlottery.mobile.pojo;
 
 /**
  * Created by ericren on 14-9-15.
+ * 胡莹莹注释
+ * 彩民实体类
  */
 public class ClientUser {
     public static ClientUser user = new ClientUser();
+    //用户id
     private String userid;
+    //用户手机号
     private String mobile;
+    //用户等级
     private String levelid;
     private String valid;
+    //剩余金额
     private String remaining;
+    //冻结资金
     private String blockedfund;
 
     public String getBlockedfund() {

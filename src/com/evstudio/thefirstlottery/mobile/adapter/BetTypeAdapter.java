@@ -14,6 +14,8 @@ import java.util.List;
 
 /**
  * Created by ericren on 14-9-12.
+ * 胡莹莹注释
+ * 投注彩票信息适配器：彩票图标，彩票名称，近期开奖，下期开奖时间，
  */
 public class BetTypeAdapter extends BaseAdapter{
 

@@ -20,6 +20,8 @@ import java.util.HashMap;
 
 /**
  * Created by eric on 14/11/20.
+ * 胡莹莹注释
+ * 足彩任选9适配器
  */
 public class AdapterListViewToto extends BaseAdapter {
     public ArrayList<FootballTotoInfo> arrayList = new ArrayList<FootballTotoInfo>();

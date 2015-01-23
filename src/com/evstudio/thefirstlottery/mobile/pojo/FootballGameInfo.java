@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 /**
  * Created by ericren on 14-11-4.
+ * 胡莹莹注释
+ * 足球比赛信息实体类
  */
 
 public class FootballGameInfo implements Serializable{
@@ -25,18 +27,18 @@ public class FootballGameInfo implements Serializable{
     //a_cn_abbr
     public String clientTeam;
 
-    //a
+    //主对胜算
     public float oddsHost;
-    //h
+    //客队胜算
     public float oddsClient;
     //d
     public float oddsDraw;
 
-    //a
+    //主让球胜算
     public float oddsAssignHost;
-    //h
+    //客让球胜算
     public float oddsAssignClient;
-    //d
+    //
     public float oddsAssignDraw;
 
     //fixedodds
@@ -68,7 +70,7 @@ public class FootballGameInfo implements Serializable{
         return sumSelected > 0;
     }
 
-    public float getMaxPl(){
+    public float getMaxPl(){    //获得最大赔率
         float fmax = 0;
         initOdds();
         for( int i = 0; i < 6; i ++ ){
@@ -80,7 +82,7 @@ public class FootballGameInfo implements Serializable{
         return fmax;
     }
 
-    public float getMinPl(){
+    public float getMinPl(){      //获得最小赔率
         float fmin = 0;
         initOdds();
         for( int i = 0; i < 6; i ++ ){

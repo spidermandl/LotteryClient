@@ -19,6 +19,8 @@ import java.util.HashMap;
 
 /**
  * Created by eric on 14/11/9.
+ * 胡莹莹注释
+ * 足彩胜负平/让球胜负平玩法适配器
  */
 public class AdapterListViewSfp extends BaseAdapter {
 
@@ -85,8 +87,8 @@ public class AdapterListViewSfp extends BaseAdapter {
         vh.tvFbWeather.setText(ftinfo.weather);
         vh.tvSfpHTeam.setText(ftinfo.hostTeam);
         vh.tvSfpGTeam.setText(ftinfo.clientTeam);
-
-        vh.tvSfpPl3.setText(String.valueOf(ftinfo.oddsHost));
+      //胜平负玩法的主队赔率
+        vh.tvSfpPl3.setText(String.valueOf(ftinfo.oddsHost));      
         vh.tvSfpPl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,8 +114,8 @@ public class AdapterListViewSfp extends BaseAdapter {
                 EventBus.getDefault().post("sfpselected");
             }
         });
-
-        vh.tvSfpPl1.setText(String.valueOf(ftinfo.oddsDraw));
+      //胜平负玩法的平局赔率
+        vh.tvSfpPl1.setText(String.valueOf(ftinfo.oddsDraw));  
         vh.tvSfpPl1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,8 +141,8 @@ public class AdapterListViewSfp extends BaseAdapter {
                 EventBus.getDefault().post("sfpselected");
             }
         });
-
-        vh.tvSfpPl0.setText(String.valueOf(ftinfo.oddsClient));
+      //胜平负玩法的客队赔率
+        vh.tvSfpPl0.setText(String.valueOf(ftinfo.oddsClient));      
         vh.tvSfpPl0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -166,8 +168,8 @@ public class AdapterListViewSfp extends BaseAdapter {
                 EventBus.getDefault().post("sfpselected");
             }
         });
-
-        vh.tvSfpRqPl3.setText("主 " + String.valueOf(ftinfo.assignor)
+      //让球胜平负玩法的主队赔率
+        vh.tvSfpRqPl3.setText("主 " + String.valueOf(ftinfo.assignor)   
                 + " 胜 " + String.valueOf(ftinfo.oddsAssignHost));
         vh.tvSfpRqPl3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,8 +196,8 @@ public class AdapterListViewSfp extends BaseAdapter {
                 EventBus.getDefault().post("sfpselected");
             }
         });
-
-        vh.tvSfpRqPl1.setText("平 " + String.valueOf(ftinfo.oddsAssignDraw));
+        //让球胜平负玩法的平局赔率
+        vh.tvSfpRqPl1.setText("平 " + String.valueOf(ftinfo.oddsAssignDraw)); 
         vh.tvSfpRqPl1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -221,8 +223,8 @@ public class AdapterListViewSfp extends BaseAdapter {
                 EventBus.getDefault().post("sfpselected");
             }
         });
-
-        vh.tvSfpRqPl0.setText("负 " + String.valueOf(ftinfo.oddsAssignClient));
+      //让球胜平负玩法的客队赔率
+        vh.tvSfpRqPl0.setText("负 " + String.valueOf(ftinfo.oddsAssignClient));  
         vh.tvSfpRqPl0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

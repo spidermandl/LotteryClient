@@ -19,6 +19,9 @@ import java.util.Random;
 
 /**
  * ADAPTER
+ * 胡莹莹注释
+ * 上海11选5中走势图界面中根据走势图选择新一期的号码的适配器：
+ * 有“点击返回”，11个号码供选择
  */
 
 public class SampleAdapter extends ArrayAdapter<String[]> {

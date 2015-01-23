@@ -14,6 +14,8 @@ import java.util.Random;
 
 /**
  * Created by ericren on 14-10-25.
+ * 胡莹莹注释
+ * 上海11选5投注中奖号码适配器
  */
 public class Sh11x5LvHistoryAdapter extends ArrayAdapter<String[]> {
     private final LayoutInflater mLayoutInflater;
